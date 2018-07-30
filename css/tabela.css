@@ -1,0 +1,151 @@
+main {
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #EEEEEE;
+    padding-top: 2em;
+}
+
+.containerTabela {
+    box-sizing: border-box;
+    padding: 2em;
+    width: 100%;
+    transition: 2s;
+
+}
+
+#btnCriarTabela {
+    background-color: #0c8cd3;
+    color: white;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    width: 8em;
+    height: 2em;
+    border: 0;
+    font-size: 2em;
+    display: inline-block;
+    transition: .1s;
+    position: relative;
+    left: -4px;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    -moz-border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+#btnCriarTabela:active {
+    transform: translatey(3px);
+    background-color: #04324c;
+    border: 0;
+    box-sizing: border-box;
+    outline: 0px;
+}
+
+#btnCriarTabela:hover {
+    text-shadow: 1px 1px 5px #fffac9;
+    -webkit-box-shadow: inset 0px 0px 5px #9be6ff;
+    -moz-box-shadow: inset 0px 0px 5px #9be6ff;
+    box-shadow: inset 0px 0px 5px #9be6ff;
+}
+
+#valorTabela {
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 0px 0px 10px;
+    display: inline-block;
+
+    height: 2em;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    width: 15em;
+    box-sizing: border-box;
+    border: 0px;
+    padding-left: 1em;
+    transition: .5s;
+
+}
+
+#valorTabela:focus {
+    border: 0px;
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 5px #0c6caf;
+    -moz-box-shadow: inset 0px 0px 5px #0c6caf;
+    box-shadow: inset 0px 0px 5px #0c6caf;
+}
+
+input {
+    display: inline-block;
+}
+
+.invalido {
+    background-color: #ffdcd2;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    background-color: #cccccc;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.centraliza-tabela {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabelaPrincipal {
+    transition: all 1s ease-in-out;
+}
+
+.tdx {
+    background-color: #0c8cd3;
+}
+
+.formTabela {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+label {
+    clear: both;
+    display: block;
+    width: 22ch;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    padding: .2em;
+    border-bottom: 2px solid black;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.anima-saida {
+    -webkit-transform: translateX(1920px);
+    -moz-transform: translateX(1920px);
+    -ms-transform: translateX(1920px);
+    -o-transform: translateX(1920px);
+    transform: translateX(1920px);
+}
+
+.entrada{
+    -webkit-animation: anima-entrada 1s;
+    animation: anima-entrada 1s;
+}
+
+@keyframes anima-entrada {
+    0% {
+        transform: translateX(-1920px);
+        opacity: 0;
+    }
+}
+
+
+
